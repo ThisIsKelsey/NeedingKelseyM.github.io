@@ -1,13 +1,69 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <title>My Home Page</title>
+  <title>我准备好离婚了！</title>
+  <style>
+    body {
+      font-family: "Georgia", serif;
+      background-color: #f4f0e5;
+      color: #3b2f2f;
+      line-height: 1.6;
+      max-width: 960px;
+      margin: auto;
+      padding: 20px;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    .toc {
+      margin-top: 30px;
+      padding: 15px;
+      border: 1px solid #ccc;
+      background: #faf7f1;
+    }
+    .chapter-link {
+      display: inline-block;
+      width: 100px;
+      margin: 5px;
+    }
+    a {
+      color: #004d99;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .preview {
+      margin-top: 30px;
+      border-top: 1px solid #bbb;
+      padding-top: 20px;
+    }
+  </style>
 </head>
 <body>
-  <h1>欢迎来到我的小说世界</h1>
-  <h2>《我准备好离婚了！》</h2>
-  <p>Chapter 1：他从梦中惊醒……</p>
-  <a href="chapter1.html">Read All</a>
+  <h1>我准备好离婚了！</h1>
+  <h2>欢迎来到我的小说网站</h2>
+
+  <div class="preview">
+    <h3>《我准备好离婚了！》</h3>
+    <p><strong>第1章：初次见面</strong></p>
+    <p>「我想我们应该结束这段婚姻。」他锐道。</p>
+    <p><a href="chapter1.html">阅读全文</a></p>
+  </div>
+
+  <div class="toc">
+    <h3>章节目录</h3>
+    <div>
+      <!-- 自动生成80章链接 -->
+      <!-- 你也可以只贴前10章，后续慢慢补上 -->
+      <script>
+        for (let i = 1; i <= 80; i++) {
+          document.write(`<a class="chapter-link" href="chapter${i}.html">第${i}章</a>`);
+        }
+      </script>
+    </div>
+  </div>
 </body>
 </html>
+
